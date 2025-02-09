@@ -49,6 +49,9 @@ def rectangle(x, y, length, width):
     ttl.right(90)
     ttl.end_fill()
     ttl.done()
+    
+rectangle (0, 0, 75, 150)
+    
 def trapezoid(x, y, bottom, top, left_border, right_border):
     ttl.up()
     ttl.up()
