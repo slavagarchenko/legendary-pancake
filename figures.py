@@ -1,4 +1,6 @@
 import turtle as ttl
+
+
 def parallelogram(x, y, length, width):
     ttl.up()
     ttl.setposition(x, y)
@@ -15,7 +17,11 @@ def parallelogram(x, y, length, width):
     ttl.right(45)
     ttl.end_fill()
     ttl.done
-parallelogram (0, 0, 50, 30)
+
+
+parallelogram(0, 0, 50, 30)
+
+
 def rhomb(x, y, length, width):
     ttl.up()
     ttl.setposition(x, y)
@@ -32,10 +38,14 @@ def rhomb(x, y, length, width):
     ttl.right(60)
     ttl.end_fill()
     ttl.done
+
+
 rhomb(52, 52, 100, 75)
+
+
 def rectangle(x, y, length, width):
     ttl.up()
-    ttl.setposition(x,y)
+    ttl.setposition(x, y)
     ttl.down()
     ttl.fillcolor('black')
     ttl.begin_fill()
@@ -48,12 +58,13 @@ def rectangle(x, y, length, width):
     ttl.forward(width)
     ttl.right(90)
     ttl.end_fill()
-    ttl.done()
-    
-rectangle (0, 0, 75, 150)
-    
+    ttl.done
+
+
+rectangle(0, 0, 75, 150)
+
+
 def trapezoid(x, y, bottom, top, left_border, right_border):
-    ttl.up()
     ttl.up()
     ttl.setposition(x, y)
     ttl.down()
@@ -67,6 +78,7 @@ def trapezoid(x, y, bottom, top, left_border, right_border):
     ttl.right(110)
     ttl.forward(bottom)
     ttl.end_fill()
-    ttl.done()
+    ttl.done
 
-trapezoid (0, 0, 150, 99, 140, 149)
+trapezoid(0, 0, 150, 99, 140, 149)
+
