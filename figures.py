@@ -16,7 +16,6 @@ def parallelogram(x, y, length, width):
     ttl.forward(width)
     ttl.right(45)
     ttl.end_fill()
-    ttl.done
 
 
 parallelogram(0, 0, 50, 30)
@@ -37,7 +36,6 @@ def rhomb(x, y, length, width):
     ttl.forward(width)
     ttl.right(60)
     ttl.end_fill()
-    ttl.done
 
 
 rhomb(52, 52, 100, 75)
@@ -47,7 +45,7 @@ def rectangle(x, y, length, width):
     ttl.up()
     ttl.setposition(x, y)
     ttl.down()
-    ttl.fillcolor('black')
+    ttl.fillcolor('pink')
     ttl.begin_fill()
     ttl.forward(length)
     ttl.right(90)
@@ -58,7 +56,6 @@ def rectangle(x, y, length, width):
     ttl.forward(width)
     ttl.right(90)
     ttl.end_fill()
-    ttl.done
 
 
 rectangle(0, 0, 75, 150)
@@ -78,7 +75,6 @@ def trapezoid(x, y, bottom, top, left_border, right_border):
     ttl.right(110)
     ttl.forward(bottom)
     ttl.end_fill()
-    ttl.done
 
 trapezoid(0, 0, 150, 99, 140, 149)
 
@@ -97,6 +93,7 @@ def square(x, y, a):
     ttl.forward(a)
     ttl.right(90)
     ttl.end_fill()
+square(0,0,50)
 
 def right_triangle(x,y,a):
     ttl.up()
@@ -111,6 +108,7 @@ def right_triangle(x,y,a):
     ttl.forward(a*(2**0.5))
     ttl.left(135)
     ttl.end_fill()
+right_triangle(0,0,70)
 
 def triangle(x,y,a):
     ttl.up()
@@ -125,3 +123,5 @@ def triangle(x,y,a):
     ttl.forward(a)
     ttl.left(120)
     ttl.end_fill()
+triangle(0,0,100)
+ttl.done
