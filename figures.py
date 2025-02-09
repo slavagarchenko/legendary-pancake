@@ -108,7 +108,7 @@ def right_triangle(x,y,a):
     ttl.left(90)
     ttl.forward(a)
     ttl.left(135)
-    ttl.forward((2*a2)(1/2))
+    ttl.forward(a*(2**0.5))
     ttl.left(135)
     ttl.end_fill()
 
