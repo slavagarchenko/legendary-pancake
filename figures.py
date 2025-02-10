@@ -1,12 +1,11 @@
 import turtle as ttl
-#x,y - coordinates
-#form_angle - the angle of the shape
-
-def parallelogram(x, y, length, width, form_angle):
+# x,y - coordinates
+# form_angle - the angle of the shape
+def parallelogram(x, y, length, width, form_angle, color):
     ttl.up()
     ttl.setposition(x, y)
     ttl.down()
-    ttl.fillcolor('yellow')
+    ttl.fillcolor(color)
     ttl.begin_fill()
     ttl.right(form_angle)
     ttl.forward(length)
@@ -19,15 +18,11 @@ def parallelogram(x, y, length, width, form_angle):
     ttl.right(45)
     ttl.end_fill()
 
-
-#parallelogram(0, 0, 50, 30,0)
-
-
-def rhomb(x, y, length, form_angle):
+def rhomb(x, y, length, form_angle, color):
     ttl.up()
     ttl.setposition(x, y)
     ttl.down()
-    ttl.fillcolor('blue')
+    ttl.fillcolor(color)
     ttl.begin_fill()
     ttl.right(form_angle)
     ttl.forward(length)
@@ -39,14 +34,13 @@ def rhomb(x, y, length, form_angle):
     ttl.forward(length)
     ttl.right(60)
     ttl.end_fill()
-#rhomb(52, 52, 100, 0)
 
 
-def rectangle(x, y, length, width, form_angle):
+def rectangle(x, y, length, width, form_angle, color):
     ttl.up()
     ttl.setposition(x, y)
     ttl.down()
-    ttl.fillcolor('pink')
+    ttl.fillcolor(color)
     ttl.begin_fill()
     ttl.right(form_angle)
     ttl.forward(length)
@@ -58,14 +52,13 @@ def rectangle(x, y, length, width, form_angle):
     ttl.forward(width)
     ttl.right(90)
     ttl.end_fill()
-#rectangle(0, 0, 75, 150, 0)
 
 
-def trapezoid(x, y, bottom, top, left_border, right_border, form_angle):
+def trapezoid(x, y, bottom, top, left_border, right_border, form_angle, color):
     ttl.up()
     ttl.setposition(x, y)
     ttl.down()
-    ttl.fillcolor('orange')
+    ttl.fillcolor(color)
     ttl.begin_fill()
     ttl.right(form_angle)
     ttl.forward(left_border)
@@ -76,13 +69,12 @@ def trapezoid(x, y, bottom, top, left_border, right_border, form_angle):
     ttl.right(110)
     ttl.forward(bottom)
     ttl.end_fill()
-#trapezoid(0, 0, 150, 99, 140, 149,0)
 
-def square(x, y, a, form_angle):
+def square(x, y, a, form_angle, color):
     ttl.up()
     ttl.setposition(x, y)
     ttl.down()
-    ttl.fillcolor('purple')
+    ttl.fillcolor(color)
     ttl.begin_fill()
     ttl.right(form_angle)
     ttl.forward(a)
@@ -94,38 +86,45 @@ def square(x, y, a, form_angle):
     ttl.forward(a)
     ttl.right(90)
     ttl.end_fill()
-#square(0,0,50,0)
 
-def right_triangle(x,y,a,form_angle):
+def right_triangle(x,y,a,form_angle, color):
     ttl.up()
     ttl.setposition(x, y)
     ttl.down()
-    ttl.fillcolor('green')
+    ttl.fillcolor(color)
     ttl.begin_fill()
     ttl.right(form_angle)
     ttl.forward(a)
-    ttl.left(90)
-    ttl.forward(a)
-    ttl.left(135)
+    ttl.right(135)
     ttl.forward(a*(2**0.5))
-    ttl.left(135)
+    ttl.right(135)
+    ttl.forward(a)
+    ttl.right(90)
     ttl.end_fill()
-#right_triangle(0,0,70,0)
 
-def triangle(x,y,a, form_angle):
+def triangle(x,y,a, form_angle, color):
     ttl.up()
     ttl.setposition(x,y)
     ttl.down()
-    ttl.fillcolor('red')
+    ttl.fillcolor(color)
     ttl.begin_fill()
     ttl.right(form_angle)
     ttl.forward(a)
-    ttl.left(120)
+    ttl.right(120)
     ttl.forward(a)
-    ttl.left(120)
+    ttl.right(120)
     ttl.forward(a)
-    ttl.left(120)
+    ttl.right(120)
     ttl.end_fill()
-#triangle(0,0,100,0)
-ttl.done
 
+
+def tangram():
+    right_triangle(0,0,50,135, 'green')
+    right_triangle(0,0,50,90, 'pink')
+    right_triangle(0.5*(2**0.5),0.5*(2**0.5),25,180,'red')
+    square(0,0,25,270,'orange')
+    right_triangle(0.5*(2**0.5)*25,0.5*(2**0.5)*25,25,0,'blue')
+    parallelogram(-0.5*(2**0.5)*25,-0.5*(2**0.5)*25,(2**0.5)*25,25,45,'yellow')
+    right_triangle((2**0.5)*25,-(2**0.5)*25,(2**0.5)*25,180,'purple')
+    ttl.done()
+tangram()
