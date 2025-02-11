@@ -127,13 +127,4 @@ def triangle(x,y,a, form_angle, color):
     parallelogram(-0.5*(2**0.5)*25,-0.5*(2**0.5)*25,(2**0.5)*25,25,45,'yellow')
     right_triangle((2**0.5)*25,-(2**0.5)*25,(2**0.5)*25,180,'purple')#middle
     ttl.done()
-#tangram()
-def goose():
-    right_triangle(0,0,50,225, 'green') #big
-    right_triangle(25*(2**0.5),25*(2**0.5),50,180, 'orange')#big
-    parallelogram(25-(2**0.5)*25,(2**0.5)*25+25,25,(2**0.5)*25,315,'blue')
-    square(25-25*(2**0.5),50+25*(2**0.5),25,0,'yellow')
-    right_triangle(25-25*(2**0.5),75+25*(2**0.5),25*(2**0.5),45,'red')#middle
-    right_triangle(0,-25,25,135,'purple')#small
-    right_triangle(25*(2**0.5)+5*(21**0.5),-10,25,292.5,'pink')#small
-goose()
+tangram()
