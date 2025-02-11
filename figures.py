@@ -128,3 +128,4 @@ def tangram():
     right_triangle((2**0.5)*25,-(2**0.5)*25,(2**0.5)*25,180,'purple')
     ttl.done()
 tangram()
+print(52)
