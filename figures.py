@@ -118,23 +118,44 @@ def triangle(x,y,a, form_angle, color):
     ttl.end_fill()
 
 
-def tangram():
-    right_triangle(0,0,50,135, 'green') #big
-    right_triangle(0,0,50,90, 'pink')#big
-    right_triangle(0.5*(2**0.5),0.5*(2**0.5),25,180,'red')#small
-    square(0,0,25,270,'orange')
-    right_triangle(0.5*(2**0.5)*25,0.5*(2**0.5)*25,25,0,'blue')#small
-    parallelogram(-0.5*(2**0.5)*25,-0.5*(2**0.5)*25,(2**0.5)*25,25,45,'yellow')
-    right_triangle((2**0.5)*25,-(2**0.5)*25,(2**0.5)*25,180,'purple')#middle
-    ttl.done()
-tangram()
+#def tangram():
+    #right_triangle(0,0,50,135, 'green') #big
+    #right_triangle(0,0,50,90, 'pink')#big
+    #right_triangle(0.5*(2**0.5),0.5*(2**0.5),25,180,'red')#small
+    #square(0,0,25,270,'orange')
+    #right_triangle(0.5*(2**0.5)*25,0.5*(2**0.5)*25,25,0,'blue')#small
+    #parallelogram(-0.5*(2**0.5)*25,-0.5*(2**0.5)*25,(2**0.5)*25,25,45,'yellow')
+    #right_triangle((2**0.5)*25,-(2**0.5)*25,(2**0.5)*25,180,'purple')#middle
+    #ttl.done()
+#tangram()
 
 def goose():
-    right_triangle(0,0,50,225, 'green') #big
-    right_triangle(25*(2**0.5),25*(2**0.5),50,180, 'orange')#big
-    parallelogram(25-(2**0.5)*25,(2**0.5)*25+25,25,(2**0.5)*25,315,'blue')
-    square(25-25*(2**0.5),50+25*(2**0.5),25,0,'yellow')
-    right_triangle(25-25*(2**0.5),75+25*(2**0.5),25*(2**0.5),45,'red')#middle
-    right_triangle(0,-25,25,135,'purple')#small
-    right_triangle(25*(2**0.5)+5*(21**0.5),-10,25,292.5,'pink')#small
+    right_triangle(-250,0,50,225, 'green') #big
+    right_triangle(25*(2**0.5)-250,25*(2**0.5),50,180, 'orange')#big
+    parallelogram(-(2**0.5)*25-225,(2**0.5)*25+25,25,(2**0.5)*25,315,'blue')
+    square(-25*(2**0.5)-225,50+25*(2**0.5),25,0,'yellow')
+    right_triangle(-25*(2**0.5)-225,75+25*(2**0.5),25*(2**0.5),45,'red')#middle
+    right_triangle(-250,-25,25,135,'purple')#small
+    right_triangle(25*(2**0.5)+5*(21**0.5)-250,-10,25,292.5,'pink')#small
 goose()
+ttl.seth(0)
+def duck():
+    right_triangle(0,25*(2**0.5),50,45, 'orange')#big
+    right_triangle(25*(2**0.5),0,50,180, 'green') #big
+    right_triangle(25*(2**0.5)-25,-25,25*(2**0.5),0,'red')#middle
+    parallelogram(-(2**0.5)*12.5,37.5*(2**0.5),25,(2**0.5)*25,90,'blue')
+    square(-12.5*(2**0.5),37.5*(2**0.5),25,270,'yellow')
+    right_triangle(-25*(2**0.5),50*(2**0.5),25,180,'purple')#small
+    right_triangle(37.5*(2**0.5),37.5*(2**0.5),25,0,'pink')#small
+duck()
+ttl.seth(0)
+def bird():
+    right_triangle(250,0,50,225, 'orange')#big
+    right_triangle(25*(2**0.5)+200,25*(2**0.5),50,45, 'green') #big
+    square(25*(2**0.5)+200,25*(2**0.5),25,270,'yellow')
+    right_triangle(25*(2**0.5)+250,50*(2**0.5),25*(2**0.5),180,'red')#middle
+    parallelogram(12.5*(2**0.5)+250,37.5*(2**0.5),(2**0.5)*25,25,270,'blue')
+    right_triangle(-25*(2**0.5)+250,25*(2**0.5)-25,25,90,'purple')#small
+    right_triangle(25*(2**0.5)+225,25*(2**0.5)-50,25,270,'pink')#small
+bird()
+ttl.seth(0)
