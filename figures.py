@@ -201,3 +201,35 @@ def knight(x,y):
 knight(250, -250)
 
 ttl.done()
+
+def bull(x,y):
+    parallelogram(x + 60, y - 30, 25, (2 ** 0.5) * 25, -45, 'blue')
+    right_triangle(x + 35, y - 5, 50, 0, 'green')  # big
+    right_triangle(x + 35 , y  - 10, 25 * (2 ** 0.5), 90, 'red')  # middle
+    right_triangle(x + 20, y - 30, 50, 135, 'orange')  # big
+    square(x - 40, y + 30, 25, 0, 'yellow')
+    right_triangle(x - 58, y + 30, 25, 315, 'purple')  # small
+    right_triangle(x + 3, y + 30, 25, 135, 'pink')  # small
+bull(-250, -250)
+
+def goat(x,y):
+    parallelogram(x - 20, y+45,25,(2**0.5)*25,0,'blue')
+    right_triangle(x - 45, y +20, 25 * (2 ** 0.5), 0, 'red')  # middle
+    square(x - 10, y +20, 25, 45, 'yellow')
+    right_triangle(x + 10, y + 5, 50, 45, 'green')  # big
+    right_triangle(x + 70, y - 5, 50, 90, 'orange')  # big
+    right_triangle(x + 88, y + 5, 25, 135, 'purple')  # small
+    right_triangle(x + 0, y - 30, 25, 90, 'pink')  # small
+goat(0, -250)
+
+def knight(x,y):
+    right_triangle(x - 40, y - 5, 25, 180, 'purple')  # small
+    right_triangle(x - 40, y - 30, 50, 270, 'green')  # big
+    right_triangle(x - 40, y - 30, 25, 0, 'pink')  # small
+    right_triangle(x + 35, y - 5, 50, 90, 'orange')  # big
+    parallelogram(x + 60, y - 30, 25, (2 ** 0.5) * 25, 90, 'blue')
+    right_triangle(x + 20, y - 5, 25 * (2 ** 0.5), 180, 'red')  # middle
+    square(x + 20, y + 60, 25, 45, 'yellow')
+knight(250, -250)
+
+ttl.done()
