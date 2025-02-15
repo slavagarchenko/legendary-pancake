@@ -151,23 +151,23 @@ def tangram(x,y):
 tangram(0,0)
 
 def swan(x,y):
-    right_triangle(x+25,y+25,50,45, 'green') #big
-    right_triangle(x-25*(2**0.5)+25,y-25*(2**0.5)+25,50,225, 'orange')#big
-    parallelogram(x+(2**0.5)*25,y-25*(2**0.5)+75,(2**0.5)*25,25,45,'blue')
-    right_triangle(x-25*(2**0.5),y-25*(2**0.5)+50,25*(2**0.5),45,'red')#middle
-    right_triangle(x+25*(2**0.5)+25,y-25*(2**0.5)+50,25,90,'purple')#small
-    square(x+25*(2**0.5),y+75-25*(2**0.5),25,180,'yellow')
-    right_triangle(x+25*(2**0.5),y+75-25*(2**0.5),25,270,'pink')#small
+    right_triangle(x+25,y+15,50,45, 'green') #big
+    right_triangle(x-25*(2**0.5)+25,y-25*(2**0.5)+15,50,225, 'orange')#big
+    parallelogram(x+(2**0.5)*25,y-25*(2**0.5)+65,(2**0.5)*25,25,45,'blue')
+    right_triangle(x-25*(2**0.5),y-25*(2**0.5)+40,25*(2**0.5),45,'red')#middle
+    right_triangle(x+25*(2**0.5)+25,y-25*(2**0.5)+40,25,90,'purple')#small
+    square(x+25*(2**0.5),y+65-25*(2**0.5),25,180,'yellow')
+    right_triangle(x+25*(2**0.5),y+65-25*(2**0.5),25,270,'pink')#small
 swan(-250,0)
 
 def bird(x,y):
-    right_triangle(x+0,y+0,50,225, 'orange')#big
-    right_triangle(x+25*(2**0.5)-50,y+25*(2**0.5),50,270, 'green') #big
-    square(x+25*(2**0.5)-50,y+25*(2**0.5),25,180,'yellow')
-    right_triangle(x+25*(2**0.5),y+50*(2**0.5),25*(2**0.5),0,'red')#middle
-    parallelogram(x+12.5*(2**0.5),y+37.5*(2**0.5),(2**0.5)*25,25,270,'blue')
-    right_triangle(x-25*(2**0.5),y+25*(2**0.5)-25,25,0,'purple')#small
-    right_triangle(x+25*(2**0.5)-25,y+25*(2**0.5)-50,25,270,'pink')#small
+    right_triangle(x+0,y-10,50,225, 'orange')#big
+    right_triangle(x+25*(2**0.5)-50,y+25*(2**0.5)-10,50,270, 'green') #big
+    square(x+25*(2**0.5)-50,y+25*(2**0.5)-10,25,180,'yellow')
+    right_triangle(x+25*(2**0.5),y+50*(2**0.5)-10,25*(2**0.5),0,'red')#middle
+    parallelogram(x+12.5*(2**0.5),y+37.5*(2**0.5)-10,(2**0.5)*25,25,270,'blue')
+    right_triangle(x-25*(2**0.5),y+25*(2**0.5)-35,25,0,'purple')#small
+    right_triangle(x+25*(2**0.5)-25,y+25*(2**0.5)-60,25,270,'pink')#small
 bird(250,0)
 
 def bull(x,y):
