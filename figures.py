@@ -168,3 +168,23 @@ def bird(x,y):
     right_triangle(25*(2**0.5)+225+x,25*(2**0.5)-50+y,25,270,'pink')#small
     ttl.seth(0)
 bird(0,100)
+def swan(x,y):
+   triangle(0+x,0+y, 50, 180,'red')
+   triangle(-30+x,10+50*3**(1/2)/2+y, 60, 0,'purple')
+   triangle(60+x,0+y,60,180,'green')
+   right_triangle(70+x,40+y,40,105,'yellow')
+   parallelogram(44+x,90+y,60,40,63,'orange')
+   square(44+x,90+y,40,197,'blue')
+   right_triangle(44+x,90+y,40, 287, 'pink')
+swan(0,0)
+def horse(x,y):
+    triangle(0+x,0+y,60, 180, 'red')
+    square(-30+x,y,30,0,'yellow')
+    right_triangle(x,-30+y,60, 90,'orange')
+    triangle(-40+x,-50+y,30,167,'blue')
+    triangle(+x,-120+y,90,270,'green')
+    right_triangle(+x,-140+y,30,180,'purple')
+    parallelogram(3**0.5*90/2+20+x,-120+y,40,50,110, 'pink')
+horse(0,0)
+
+ttl.done()
