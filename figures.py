@@ -148,3 +148,33 @@ def bird(x,y):
     right_triangle(x-25*(2**0.5),y+25*(2**0.5)-25,25,0,'purple')#small
     right_triangle(x+25*(2**0.5)-25,y+25*(2**0.5)-50,25,270,'pink')#small
 bird(250,0)
+
+def bull(x,y):
+    parallelogram(x + 0, y + 0, 25, (2 ** 0.5) * 25, -45, 'blue')
+    right_triangle(x - 25, y + 25, 50, 0, 'green')  # big
+    right_triangle(x - 25 , y  + 20, 25 * (2 ** 0.5), 90, 'red')  # middle
+    right_triangle(x - 40, y + 0, 50, 135, 'orange')  # big
+    square(x - 100, y + 50, 25, 0, 'yellow')
+    right_triangle(x - 118, y + 60, 25, 315, 'purple')  # small
+    right_triangle(x - 57, y + 60, 25, 135, 'pink')  # small
+bull(-200, -300)
+
+def goat(x,y):
+    parallelogram(x + 0,y+0,25,(2**0.5)*25,0,'blue')
+    right_triangle(x - 25, y - 25, 25 * (2 ** 0.5), 0, 'red')  # middle
+    square(x + 10, y - 25, 25, 45, 'yellow')
+    right_triangle(x + 30, y - 40, 50, 45, 'green')  # big
+    right_triangle(x + 90, y - 50, 50, 90, 'orange')  # big
+    right_triangle(x + 108, y - 40, 25, 135, 'purple')  # small
+    right_triangle(x + 20, y - 75, 25, 90, 'pink')  # small
+goat(-30, -225)
+
+def knight(x,y):
+    right_triangle(x + 0, y + 25, 25, 180, 'purple')  # small
+    right_triangle(x + 0, y + 0, 50, 270, 'green')  # big
+    right_triangle(x - 0, y + 0, 25, 0, 'pink')  # small
+    right_triangle(x + 75, y + 25, 50, 90, 'orange')  # big
+    parallelogram(x + 100, y + 0, 25, (2 ** 0.5) * 25, 90, 'blue')
+    right_triangle(x + 60, y + 25, 25 * (2 ** 0.5), 180, 'red')  # middle
+    square(x + 60, y + 90, 25, 45, 'yellow')
+knight(200, -300)
