@@ -140,16 +140,6 @@ def horse(x,y):
     right_triangle(x+0, y-25, 25, 270, 'pink')#small
 horse(250,250)
 
-def tangram(x,y):
-    right_triangle(x+0, y+10, 50, 225, 'green') #big
-    right_triangle(x+0, y+10, 50, 135, 'orange')#big
-    parallelogram(x-12.5*(2**0.5), y-12.5*(2**0.5)+10, (2**0.5)*25, 25, 0, 'blue')
-    square(x+0, y+10, 25, 315, 'yellow')
-    right_triangle(x+25*(2**0.5), y-25*(2**0.5)+10, 25*(2**0.5), 180, 'red')#middle
-    right_triangle(x+0, y+10, 25, 45, 'purple')#small
-    right_triangle(x+12.5*(2**0.5), y+12.5*(2**0.5)+10, 25, 315, 'pink')#small
-tangram(0,0)
-
 def swan(x,y):
     right_triangle(x+25, y+15, 50, 45, 'green') #big
     right_triangle(x-25*(2**0.5)+25, y-25*(2**0.5)+15, 50, 225, 'orange')#big
@@ -159,6 +149,16 @@ def swan(x,y):
     right_triangle(x+25*(2**0.5)+25, y-25*(2**0.5)+40, 25, 90, 'purple')#small
     right_triangle(x+25*(2**0.5), y+65-25*(2**0.5), 25, 270, 'pink')#small
 swan(-250,0)
+
+def tangram(x,y):
+    right_triangle(x+0, y+10, 50, 225, 'green') #big
+    right_triangle(x+0, y+10, 50, 135, 'orange')#big
+    parallelogram(x-12.5*(2**0.5), y-12.5*(2**0.5)+10, (2**0.5)*25, 25, 0, 'blue')
+    square(x+0, y+10, 25, 315, 'yellow')
+    right_triangle(x+25*(2**0.5), y-25*(2**0.5)+10, 25*(2**0.5), 180, 'red')#middle
+    right_triangle(x+0, y+10, 25, 45, 'purple')#small
+    right_triangle(x+12.5*(2**0.5), y+12.5*(2**0.5)+10, 25, 315, 'pink')#small
+tangram(0,0)
 
 def bird(x,y):
     right_triangle(x+25*(2**0.5)-50, y+25*(2**0.5)-10, 50, 270, 'green') #big
