@@ -1,3 +1,6 @@
+# Case-study #1
+# Developers: Garchenko V.,Gaberman A., Rahimov I.
+
 import turtle as ttl
 # x,y - coordinates
 # form_angle - the angle of the shape
