@@ -23,43 +23,6 @@ def parallelogram(x, y, length, width, form_angle, color):
     ttl.end_fill()
     ttl.seth(0)
 
-def rhomb(x, y, length, form_angle, color):
-    ttl.up()
-    ttl.setposition(x, y)
-    ttl.down()
-    ttl.fillcolor(color)
-    ttl.begin_fill()
-    ttl.right(form_angle)
-    ttl.forward(length)
-    ttl.right(120)
-    ttl.forward(length)
-    ttl.right(60)
-    ttl.forward(length)
-    ttl.right(120)
-    ttl.forward(length)
-    ttl.right(60)
-    ttl.end_fill()
-    ttl.seth(0)
-
-
-def rectangle(x, y, length, width, form_angle, color):
-    ttl.up()
-    ttl.setposition(x, y)
-    ttl.down()
-    ttl.fillcolor(color)
-    ttl.begin_fill()
-    ttl.right(form_angle)
-    ttl.forward(length)
-    ttl.right(90)
-    ttl.forward(width)
-    ttl.right(90)
-    ttl.forward(length)
-    ttl.right(90)
-    ttl.forward(width)
-    ttl.right(90)
-    ttl.end_fill()
-    ttl.seth(0)
-
 def square(x, y, a, form_angle, color):
     ttl.up()
     ttl.setposition(x, y)
